@@ -1,0 +1,8 @@
+prefix=/home/zhu/ardrone_simulator/devel
+
+Name: mocap_odometry
+Description: Description of mocap_odometry
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zhu/ardrone_simulator/devel/lib 
+Requires: roscpp rospy std_msgs tf

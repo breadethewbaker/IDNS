@@ -1,0 +1,2 @@
+AR.Drone-ROS-master/cvg_sim_gazebo:AR.Drone-ROS-master/cvg_sim_gazebo_plugins:AR.Drone-ROS-master/cvg_sim_msgs:AR.Drone-ROS-master/message_to_tf:AR.Drone-ROS-master/tum_simulator:ardrone_autonomy-indigo-devel:pid_control_ardrone-master/ardrone_joy:pid_control_ardrone-master/mocap_odometry:pid_control_ardrone-master/pid_ardrone
+-DCATKIN_DEVEL_PREFIX=/home/zhu/ardrone_simulator/devel -DCMAKE_INSTALL_PREFIX=/home/zhu/ardrone_simulator/install -G Unix Makefiles
