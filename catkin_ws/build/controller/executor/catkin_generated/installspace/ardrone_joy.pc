@@ -1,0 +1,8 @@
+prefix=/home/apollo/catkin_ws/install
+
+Name: ardrone_joy
+Description: Description of ardrone_joy
+Version: 0.0.0
+Cflags: -I/home/apollo/catkin_ws/install/include
+Libs: -L/home/apollo/catkin_ws/install/lib 
+Requires: message_runtime

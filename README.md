@@ -30,38 +30,72 @@ Instruction to start ardrone autonomy
 	1. Download master file and store it into the workspace's src file
 	2. Compile it
 
-#Control the quadrotor vehicle on the simulator
+#to run simulator:
+1. start roscore
+cd
+cd catkin_ws
+export ROS_HOSTNAME=localhost
+ROS_MASTER_URI=http://localhost:11311
+roscore
 
-	#1. Start the simulator
-		cd
-		cd ardrone_simulator
-		source devel/setup.bash
-		roslaunch cvg_sim_gazebo ardrone_testworld.launch
+2. start world
+cd
+cd catkin_ws
+export ROS_HOSTNAME=localhost
+ROS_MASTER_URI=http://localhost:11311
+source devel/setup.bash
+roslaunch cvg_sim_gazebo ardrone_warehouse2.launch
 
-	#2. Start the simulator control
-		cd
-		cd ardrone_simulator
-		source devel/setup.bash
-		cd src/pid_control_ardrone-master/pid_ardrone/src
-		./sim_controller.py
+##No need, just for test
+##3. run one command
+cd
+cd catkin_ws
+export ROS_HOSTNAME=localhost
+ROS_MASTER_URI=http://localhost:11311
+source devel/setup.bash
+rostopic pub /ardrone/takeoff std_msgs/Empty
 
-	#3. Start the keyboard control
-		cd
-		cd ardrone_simulator
-		source devel/setup.bash
-		cd src/pid_control_ardrone-master/ardrone_joy/scripts
-		./ardrone_joy_keyboard.py
 
-	#4. Track the trajectory of the drone by keyboard
-		cd
-		cd ardrone_simulator
-		source devel/setup.bash
-		cd src/pid_control_ardrone-master/ardrone_joy/scripts
-		./plot.py
-	#4 Track the trajectory of the drone drive by controller
-		cd 
-		cd ardrone_simulator/src/pid_control_ardrone-master/pid_ardrone/src
-		./plot.py
+4. Start controller
+cd
+cd catkin_ws
+export ROS_HOSTNAME=localhost
+ROS_MASTER_URI=http://localhost:11311
+source devel/setup.bash
+cd ~/IDNS/catkin_ws/src/controller/instructor/scripts
+./instructor.py 
+
+5. Start keyboard
+cd
+cd catkin_ws
+export ROS_HOSTNAME=localhost
+ROS_MASTER_URI=http://localhost:11311
+source devel/setup.bash
+cd ~/IDNS/catkin_ws/src/controller/executor/scripts/
+    ./executor.py
+    OR
+    ./executorVer2.py
+
+#NOTES:
+debugging(using visual studio code) is setup with executer.py executerVer2.py and instructor.py.
+
+creating a new .world file:
+    go to src/ardrone_simulator_gazebo7/cvg_sim_gazebo/
+        cd
+        cd catkin_ws/src/ardrone_simulator_gazebo7/cvg_sim_gazebo/
+    in the world directory:
+        make a copy of ardrone_testworld.world
+            ex: myworld.world
+    in the launch directory:
+        make a copy of ardrone_testworld.launch
+            ex: myworld.launch
+        inside it modify node -> value to the path of your .world file
+            ex: value="$(find cvg_sim_gazebo)/worlds/myworld.world"
+    to launch use the following:
+        roslaunch cvg_sim_gazebo myworld.launch
+        
+Astar should be implented in:
+    src/controller/executor/scripts/executerVer2.py around line 125
 
 # Control the real drone
 
