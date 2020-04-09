@@ -33,14 +33,14 @@ Instruction to start ardrone autonomy
 #to run simulator:
 1. start roscore
 cd
-cd catkin_ws
+cd IDNS/catkin_ws
 export ROS_HOSTNAME=localhost
 ROS_MASTER_URI=http://localhost:11311
 roscore
 
 2. start world
 cd
-cd catkin_ws
+cd IDNS/catkin_ws
 export ROS_HOSTNAME=localhost
 ROS_MASTER_URI=http://localhost:11311
 source devel/setup.bash
@@ -49,7 +49,7 @@ roslaunch cvg_sim_gazebo ardrone_warehouse2.launch
 ##No need, just for test
 ##3. run one command
 cd
-cd catkin_ws
+cd IDNS/catkin_ws
 export ROS_HOSTNAME=localhost
 ROS_MASTER_URI=http://localhost:11311
 source devel/setup.bash
@@ -58,7 +58,7 @@ rostopic pub /ardrone/takeoff std_msgs/Empty
 
 4. Start controller
 cd
-cd catkin_ws
+cd IDNS/catkin_ws
 export ROS_HOSTNAME=localhost
 ROS_MASTER_URI=http://localhost:11311
 source devel/setup.bash
@@ -67,7 +67,7 @@ cd ~/IDNS/catkin_ws/src/controller/instructor/scripts
 
 5. Start keyboard
 cd
-cd catkin_ws
+cd IDNS/catkin_ws
 export ROS_HOSTNAME=localhost
 ROS_MASTER_URI=http://localhost:11311
 source devel/setup.bash
