@@ -1,4 +1,4 @@
-BOX LOCATED AT: 
+BOX LOCATED AT: https://drive.google.com/file/d/1lWE958Y6QH6v0-zaCBzT3XVtNffldDOb/view?usp=sharing
 Box name : ROSardroneSandbox
 OS : ubuntu 16.04 virtual machine
 Sudo password : artemis
