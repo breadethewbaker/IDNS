@@ -1,0 +1,13 @@
+# Target labels
+ ardronelib
+# Source files and their labels
+/home/vlad/ardrone_simulator/build/ardrone_autonomy/CMakeFiles/ardronelib
+/home/vlad/ardrone_simulator/build/ardrone_autonomy/CMakeFiles/ardronelib.rule
+/home/vlad/ardrone_simulator/build/ardrone_autonomy/CMakeFiles/ardronelib-complete.rule
+/home/vlad/ardrone_simulator/devel/src/ardronelib-stamp/ardronelib-install.rule
+/home/vlad/ardrone_simulator/devel/src/ardronelib-stamp/ardronelib-mkdir.rule
+/home/vlad/ardrone_simulator/devel/src/ardronelib-stamp/ardronelib-download.rule
+/home/vlad/ardrone_simulator/devel/src/ardronelib-stamp/ardronelib-update.rule
+/home/vlad/ardrone_simulator/devel/src/ardronelib-stamp/ardronelib-patch.rule
+/home/vlad/ardrone_simulator/devel/src/ardronelib-stamp/ardronelib-configure.rule
+/home/vlad/ardrone_simulator/devel/src/ardronelib-stamp/ardronelib-build.rule

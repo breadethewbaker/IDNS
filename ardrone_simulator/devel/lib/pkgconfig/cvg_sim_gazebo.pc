@@ -1,8 +1,8 @@
-prefix=/home/zhu/ardrone_simulator/devel
+prefix=/home/vlad/ardrone_simulator/devel
 
 Name: cvg_sim_gazebo
 Description: Description of cvg_sim_gazebo
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/zhu/ardrone_simulator/devel/lib 
+Libs: -L${prefix}/lib 
 Requires: 

@@ -1,8 +1,8 @@
-prefix=/home/zhu/ardrone_simulator/devel
+prefix=/home/vlad/ardrone_simulator/devel
 
 Name: ardrone_joy
 Description: Description of ardrone_joy
 Version: 0.0.0
-Cflags: -I/home/zhu/ardrone_simulator/devel/include
-Libs: -L/home/zhu/ardrone_simulator/devel/lib 
+Cflags: -I/home/vlad/ardrone_simulator/devel/include
+Libs: -L${prefix}/lib 
 Requires: message_runtime

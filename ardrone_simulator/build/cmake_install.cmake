@@ -1,8 +1,8 @@
-# Install script for directory: /home/zhu/ardrone_simulator/src
+# Install script for directory: /home/vlad/ardrone_simulator/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zhu/ardrone_simulator/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vlad/ardrone_simulator/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,88 +44,97 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhu/ardrone_simulator/install/_setup_util.py")
+   "/home/vlad/ardrone_simulator/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhu/ardrone_simulator/install" TYPE PROGRAM FILES "/home/zhu/ardrone_simulator/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/vlad/ardrone_simulator/install" TYPE PROGRAM FILES "/home/vlad/ardrone_simulator/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhu/ardrone_simulator/install/env.sh")
+   "/home/vlad/ardrone_simulator/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhu/ardrone_simulator/install" TYPE PROGRAM FILES "/home/zhu/ardrone_simulator/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/vlad/ardrone_simulator/install" TYPE PROGRAM FILES "/home/vlad/ardrone_simulator/build/catkin_generated/installspace/env.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhu/ardrone_simulator/install/setup.bash")
+   "/home/vlad/ardrone_simulator/install/setup.bash;/home/vlad/ardrone_simulator/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhu/ardrone_simulator/install" TYPE FILE FILES "/home/zhu/ardrone_simulator/build/catkin_generated/installspace/setup.bash")
+file(INSTALL DESTINATION "/home/vlad/ardrone_simulator/install" TYPE FILE FILES
+    "/home/vlad/ardrone_simulator/build/catkin_generated/installspace/setup.bash"
+    "/home/vlad/ardrone_simulator/build/catkin_generated/installspace/local_setup.bash"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhu/ardrone_simulator/install/setup.sh")
+   "/home/vlad/ardrone_simulator/install/setup.sh;/home/vlad/ardrone_simulator/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhu/ardrone_simulator/install" TYPE FILE FILES "/home/zhu/ardrone_simulator/build/catkin_generated/installspace/setup.sh")
+file(INSTALL DESTINATION "/home/vlad/ardrone_simulator/install" TYPE FILE FILES
+    "/home/vlad/ardrone_simulator/build/catkin_generated/installspace/setup.sh"
+    "/home/vlad/ardrone_simulator/build/catkin_generated/installspace/local_setup.sh"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhu/ardrone_simulator/install/setup.zsh")
+   "/home/vlad/ardrone_simulator/install/setup.zsh;/home/vlad/ardrone_simulator/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhu/ardrone_simulator/install" TYPE FILE FILES "/home/zhu/ardrone_simulator/build/catkin_generated/installspace/setup.zsh")
+file(INSTALL DESTINATION "/home/vlad/ardrone_simulator/install" TYPE FILE FILES
+    "/home/vlad/ardrone_simulator/build/catkin_generated/installspace/setup.zsh"
+    "/home/vlad/ardrone_simulator/build/catkin_generated/installspace/local_setup.zsh"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhu/ardrone_simulator/install/.rosinstall")
+   "/home/vlad/ardrone_simulator/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhu/ardrone_simulator/install" TYPE FILE FILES "/home/zhu/ardrone_simulator/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/vlad/ardrone_simulator/install" TYPE FILE FILES "/home/vlad/ardrone_simulator/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/zhu/ardrone_simulator/build/gtest/cmake_install.cmake")
-  include("/home/zhu/ardrone_simulator/build/AR.Drone-ROS-master/cvg_sim_msgs/cmake_install.cmake")
-  include("/home/zhu/ardrone_simulator/build/AR.Drone-ROS-master/tum_simulator/cmake_install.cmake")
-  include("/home/zhu/ardrone_simulator/build/ardrone_autonomy-indigo-devel/cmake_install.cmake")
-  include("/home/zhu/ardrone_simulator/build/pid_control_ardrone-master/ardrone_joy/cmake_install.cmake")
-  include("/home/zhu/ardrone_simulator/build/AR.Drone-ROS-master/cvg_sim_gazebo/cmake_install.cmake")
-  include("/home/zhu/ardrone_simulator/build/AR.Drone-ROS-master/cvg_sim_gazebo_plugins/cmake_install.cmake")
-  include("/home/zhu/ardrone_simulator/build/AR.Drone-ROS-master/message_to_tf/cmake_install.cmake")
-  include("/home/zhu/ardrone_simulator/build/pid_control_ardrone-master/mocap_odometry/cmake_install.cmake")
-  include("/home/zhu/ardrone_simulator/build/pid_control_ardrone-master/pid_ardrone/cmake_install.cmake")
+  include("/home/vlad/ardrone_simulator/build/gtest/cmake_install.cmake")
+  include("/home/vlad/ardrone_simulator/build/ardrone_simulator_gazebo7/cvg_sim_msgs/cmake_install.cmake")
+  include("/home/vlad/ardrone_simulator/build/ardrone_simulator_gazebo7/tum_simulator/cmake_install.cmake")
+  include("/home/vlad/ardrone_simulator/build/ardrone_autonomy/cmake_install.cmake")
+  include("/home/vlad/ardrone_simulator/build/pid_control_ardrone/ardrone_joy/cmake_install.cmake")
+  include("/home/vlad/ardrone_simulator/build/ardrone_simulator_gazebo7/cvg_sim_gazebo/cmake_install.cmake")
+  include("/home/vlad/ardrone_simulator/build/ardrone_simulator_gazebo7/cvg_sim_gazebo_plugins/cmake_install.cmake")
+  include("/home/vlad/ardrone_simulator/build/ardrone_simulator_gazebo7/message_to_tf/cmake_install.cmake")
+  include("/home/vlad/ardrone_simulator/build/pid_control_ardrone/mocap_odometry/cmake_install.cmake")
+  include("/home/vlad/ardrone_simulator/build/pid_control_ardrone/pid_ardrone/cmake_install.cmake")
 
 endif()
 
@@ -137,5 +146,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zhu/ardrone_simulator/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vlad/ardrone_simulator/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

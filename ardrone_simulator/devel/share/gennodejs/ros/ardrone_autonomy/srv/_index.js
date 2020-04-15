@@ -2,13 +2,13 @@
 "use strict";
 
 let CamSelect = require('./CamSelect.js')
-let FlightAnim = require('./FlightAnim.js')
 let LedAnim = require('./LedAnim.js')
 let RecordEnable = require('./RecordEnable.js')
+let FlightAnim = require('./FlightAnim.js')
 
 module.exports = {
   CamSelect: CamSelect,
-  FlightAnim: FlightAnim,
   LedAnim: LedAnim,
   RecordEnable: RecordEnable,
+  FlightAnim: FlightAnim,
 };
